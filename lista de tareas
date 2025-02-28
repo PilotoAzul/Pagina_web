@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <style>
+        body {
+            background-color: rgb(159, 33, 217);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #lista {
+            list-style-type: none;
+            padding: 0;
+        }
+        #lista li {
+            background-color: #acc32c;
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #lista li button {
+            background-color: #ff4d4d;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #lista li button:hover {
+            background-color: #cc0000;
+        }
 
+        #buton{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="tarea" placeholder="Escribe una tarea">
+    <button id="agregar">Agregar</button>
+    <ul id="lista"></ul>
+
+
+    <script src="Lis.js"></script>
+</body>
+</html>
